@@ -15,20 +15,20 @@ class PortfoliosController < ApplicationController
 	end
 
 	def create
-		@portfolio_item = Portfolio.new(portfolio-params)
+		@portfolio_item = Portfolio.new(portfolio_params)
 
 	  respond_to do |format|
 	    if @portfolio_item.save
 	      format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live.' }
 	    else
-		format.html { render :new }
-	    end
+		      format.html { render :new }
+	      end
       end
     end
 
     def edit
     	@portfolio_item = Portfolio.find(params[:id])
-    end
+          end
 
     def update
     	@portfolio_item = Portfolio.find(params[:id])
