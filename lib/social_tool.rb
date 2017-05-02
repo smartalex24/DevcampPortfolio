@@ -9,7 +9,6 @@ module SocialTool
 
     client.search("#rubyonrails", result_type: 'recent').take(6).collect do |tweet|
       "#{tweet.user.screen_name}: #{tweet.text}"
-
     end
   end
 end
