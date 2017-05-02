@@ -5,7 +5,7 @@ module ApplicationHelper
       " ".html_safe +
       (link_to "Login", new_user_session_path, class: style)
     else
-      (link_to "Logout", destroy_user_session_path, method: :delete, class: style)
+      link_to "Logout", destroy_user_session_path, method: :delete, class: style
     end
   end
 
@@ -57,6 +57,18 @@ module ApplicationHelper
 
   def active? path
     "active" if current_page? path
+  end
+
+  def alerts
+    alert = (flash[:alert] || flash[:error] || flash[:notice])
+
+    if alert
+      alert_generator alert
+    end
+  end
+
+  def alert_generator msg
+    js add_gritter(msg, title: "Alex Cortes Portfolio", sticky: false)
   end
 
 end
