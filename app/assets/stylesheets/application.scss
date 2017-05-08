@@ -33,6 +33,7 @@ body {
   height: 100%;
 }
 body {
+  font-family: 'Economica', sans-serif;
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
@@ -75,6 +76,8 @@ body {
 }
 
 .nav-masthead .nav-link {
+  font-family: 'Economica', sans-serif;
+  font-size: 1.5em;
   padding: .25rem 0;
   font-weight: bold;
   color: rgba(255,255,255,.5);
@@ -167,12 +170,12 @@ body {
  */
 
 .card-block {
-  color: black;
+  color: #249CAF;
   text-align: left;
 }
 
 .auth-links a {
-  color: black;
+  color: #249CAF;
 }
 
 .register-text {
@@ -180,6 +183,8 @@ body {
 }
 
 .login > .card {
+  border: none;
+  background-color: transparent;
   width: 22rem;
   margin: 0 auto;
   float: none;
@@ -201,6 +206,7 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  background: image-url("aurora_lights.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -209,15 +215,17 @@ body {
 }
 
 .tech-news {
-  color: black;
+  color: #249CAF;
   margin: 20px;
 }
 
 .tech-news a {
-  color: green;
+  color: red;
 }
 
 .tech-news > .card {
+  border: none;
+  background-color: transparent;
   padding: 30px;
 }
 

@@ -7,6 +7,8 @@
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
+    <link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet">
+
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -18,14 +20,8 @@
       <div class="site-wrapper-inner">
         <div class="cover-container">
 
-        <%= video_tag(
-            'New-York-Sky.mp4',
-            id: 'background',
-            autoplay: true,
-            loop: true,
-            muted: false
-          )
-          %>
+        <div id="background"></div>
+
 
           <%= render "shared/application_nav" %>
 
@@ -37,7 +33,7 @@
         
           <%= source_helper("application") %>
 
-        </div>
+        
       </div>
     </div>
   </body>
